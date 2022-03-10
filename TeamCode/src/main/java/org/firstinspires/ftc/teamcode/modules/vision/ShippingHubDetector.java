@@ -26,13 +26,13 @@ public class ShippingHubDetector extends OpenCvPipeline {
 
     private Mat mat;
     private Mat ret;
-    Scalar lowerOrange = new Scalar(0.0, 128.0, 128.0); //
-    Scalar upperOrange = new Scalar(128.0, 128.0, 128.0);
+    Scalar lowerOrange = new Scalar(45.0, 128.0, 128.0); //
+    Scalar upperOrange = new Scalar(65.0, 128.0, 128.0);
     private double x;
     private double y;
     double width;
     double height;
-    public static int CAMERA_WIDTH = 320;
+    public static int CAMERA_WIDTH = 176;
     public static int HORIZON = (int)((100.0 / 320.0) * CAMERA_WIDTH);
     public static boolean showOriginal;
     @Override
